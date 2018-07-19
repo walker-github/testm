@@ -13,7 +13,7 @@ echo "     Using --- $numthreads"
 
 if [ -z "$startport" ] ;then
     echo "\$startport is empty"
-    startport=8080
+    startport=8100
 else
     echo "\$startport is NOT empty"
 fi
