@@ -8,4 +8,4 @@ RUN apk update && \
 
 COPY entrypoint.sh /usr/local/bin/xmrig.sh
 
-ENTRYPOINT ["xmrig.sh"]
+ENTRYPOINT ["entrypoint.sh"]
