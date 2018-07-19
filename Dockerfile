@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
 ENV VERSION 2.6.4
-RUN --publish=80:8080 nginx
+EXPOSE 8080
 RUN apk update && \
     apk add git make g++ cmake \
         libuv-dev libmicrohttpd-dev --no-cache
