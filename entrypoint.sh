@@ -1,8 +1,7 @@
 #!/bin/sh
 
 sysctl vm.nr_hugepages=128
-listen http://:8080/
-startport=8080
+
 if [ -z "$numthreads" ]; then
     echo "\$numthreads is empty"
     cache=$(cat /proc/cpuinfo | grep "cache size" | awk 'NR==1{print $4}')
